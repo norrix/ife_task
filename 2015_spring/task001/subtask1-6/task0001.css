@@ -33,3 +33,37 @@ p.black{
 .fa-glass:before {
   content: "\f000";
 }
+
+/* subtask6 */
+#div1{
+    background: #f00;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+#div2{
+    position: relative;
+    background: #f00;
+    text-align: center;
+    width: 960px;
+    left: 50%;
+    right: 50%;
+    margin: 10px -480px;
+}
+#div3{
+    margin: 0 auto;
+    width: 200px;
+}
+.t1, .t2, .t3, .t4, .mid, .b1, .b2, .b3, .b4{
+    background: #BDF;
+    height: 1px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.t1, .b1{margin: 0 2%; background: #999;}
+.t2, .b2{margin: 0 1.5%;}
+.t3, .b3{margin: 0 1%;}
+.t4, .b4{margin: 0 0.5%; height: 2px;}
+.mid{height: 200px; margin: 0; text-align: center;}
+
+
