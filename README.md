@@ -10,7 +10,11 @@
 </table>
 
 # ChangeLog :notebook:
-2015-08-15 spring-task001 In progress
+ In progress
 - [x] subtask1
 - [ ] subtask2
 - [ ] subtask3
+
+
+Task | Status 
+spring-task001|In progress
