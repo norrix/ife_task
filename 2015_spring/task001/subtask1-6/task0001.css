@@ -34,7 +34,7 @@ p.black{
   content: "\f000";
 }
 
-/* subtask6 */
+/* div居中 */
 #div1{
     background: #f00;
     text-align: center;
@@ -50,6 +50,8 @@ p.black{
     right: 50%;
     margin: 10px -480px;
 }
+
+/* 可复用自适应圆角矩形 */
 #div3{
     margin: 0 auto;
     width: 200px;
@@ -66,4 +68,6 @@ p.black{
 .t4, .b4{margin: 0 0.5%; height: 2px;}
 .mid{height: 200px; margin: 0; text-align: center;}
 
+
+/* 两列布局两种方法 */
 
