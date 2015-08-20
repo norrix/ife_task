@@ -10,7 +10,7 @@
 
 # ChangeLog :notebook:
 ## ife
-- [x] spring-task0001-subtask1-6 [demo](norrix.github.io/ife/2015_spring/task0001/subtask1-6/task0001.html)
+- [x] spring-task0001-subtask1-6 [demo](2015_spring/task0001/subtask1-6/task0001.html)
 - [ ] spring-task0001-subtask7
 
 
