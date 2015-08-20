@@ -1,0 +1,95 @@
+a { color: blue; }
+h2 { font-size: 14px; }
+p.black{
+    font-size: 12px;
+    color: yellow;
+    background-color: black;
+}
+.pic {
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot');
+	src: url('fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/fontawesome-webfont.woff') format('woff'),
+		url('fonts/fontawesome-webfont.ttf') format('truetype'),
+		url('fonts/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
+		url('fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* div居中 */
+#div1{
+    background: #f00;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+#div2{
+    position: relative;
+    background: #f00;
+    text-align: center;
+    width: 960px;
+    left: 50%;
+    right: 50%;
+    margin: 10px -480px;
+}
+
+/* 可复用自适应圆角矩形 */
+#div3 {
+    margin: 0 auto;
+    width: 200px;
+}
+#t1, #t2, #t3, #t4, #mid, #b1, #b2, #b3, #b4 {
+    background: #BDF;
+    height: 1px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+#t1, #b1 { margin: 0 2%; background: #999; }
+#t2, #b2 { margin: 0 1#5%; }
+#t3, #b3 { margin: 0 1%; }
+#t4, #b4 { margin: 0 0#5%; height: 2px; }
+#mid { height: 200px; margin: 0; text-align: center; }
+
+
+/* 两列布局两种方法 */
+#div4, #div5 { margin: 20px 300px; min-width: 500px;}
+#div4-a, #div5-a { background: #f00; height: 50px;}
+#div4-b, #div5-b { background: #00f; height: 50px;}
+#div4-c, #div5-c { background: #ff0; height: 50px; width: 100%; clear: left;}
+#div4-a { width: 200px;  float: left; }
+#div4-b { margin-left: 200px;}
+#div5-ab {padding-left: 200px;}
+#div5-b { width: 100%; float: left;}
+#div5-a { width: 200px; float: left; margin-left: -100%; position: relative; left: -200px;}
+
+/* 实现一个浮动布局 */
+#div6 {
+    margin: 0 200px 20px 200px;
+    overflow: auto;
+    background: #f00;
+}
+.floatbox {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    background: #00f;
+}
