@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 ﻿# ChangeLog :notebook:
 ## IFE
 - [x] spring-task0001-subtask1-6 [demo](http://norrix.github.io/ife_task/2015_spring/task0001/subtask1-6/task0001.html)
+=======
+﻿IFE Tasks
+===
+# ChangeLog :notebook:
+## IFE
+- [x] spring-task0001-subtask1-6 [demo](task0001/subtask1-6/task0001.html)
+>>>>>>> master
 - [ ] spring-task0001-subtask7
 
 | Task | Status |
