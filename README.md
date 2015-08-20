@@ -1,6 +1,4 @@
-﻿IFE Tasks
-===
-# ChangeLog :notebook:
+﻿# ChangeLog :notebook:
 ## IFE
 - [x] spring-task0001-subtask1-6 [demo](http://norrix.github.io/ife_task/2015_spring/task0001/subtask1-6/task0001.html)
 - [ ] spring-task0001-subtask7
