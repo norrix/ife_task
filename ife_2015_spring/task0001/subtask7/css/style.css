@@ -12,6 +12,7 @@ img {
 	display: block;
 }
 
+/* ================= index.html ===================== */
 /* header */
 header {
 	position: relative;
@@ -21,33 +22,35 @@ header {
 	background: #522a5c;
 }
 
-nav {
+header nav {
 	position: relative;
 	width: 980px;
 	height: 75px;
 	margin: 0 auto;
 }
 
-nav #logo {
+header nav #logo {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 
-nav ul {
+header nav ul {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	list-style: none;
 }
 
-nav li {
+header nav li {
 	float: left;
 	font: 14px SimSun;
 	margin-left: 28px;
 }
 
-#github {
+header #github {
+	width: 30px;
+	height: 34px; 
 	position: absolute;
 	right: 10px;
 	bottom: 0;
@@ -97,4 +100,130 @@ nav li {
 #banner #banner-text p {
 	font-size: 12px;
 	line-height: 150%;
+}
+
+/* main */
+#main {
+	background: #eee;
+	min-width: 980px;
+}
+#main-head {
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 110px;
+}
+
+#main-head #article-wrapper{
+	overflow: hidden;
+	margin-right: -10px;
+}
+
+#main-head article {
+	width: 320px;
+	margin-top: 10px;
+	margin-right: 10px;
+	background: #fff;
+	float: left;
+	padding-bottom: 999px;
+	margin-bottom: -999px;
+}
+
+#main-head article img {
+	width: 300px;
+	height: 180px;
+	margin: 10px;
+}
+
+#main-head article p {
+	font-size: 12px;
+	line-height: 170%;
+	margin: 5px 30px 25px;
+}
+
+/* main content */
+#main-content {
+	background: #fff;
+	margin-bottom: 200px;
+}
+
+#main-content img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	position: relative;
+	top: -50px;
+	margin: 0 auto;
+}
+
+#main-content #title {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Century Gothic";
+	margin: 0px auto 40px;
+}
+
+#main-content #intro {
+	font-size: 14px;
+	line-height: 170%;
+	width: 600px;
+	margin: 0 auto;
+}
+
+/* footer */
+footer {
+	background: #000;
+	min-width: 980px;
+}
+
+footer nav {
+	width: 100%;
+	overflow: auto;
+	border-bottom: 1px solid #bdf;
+}
+
+footer nav ul {
+	list-style: none;
+	width: 224px;
+	margin: 0 auto;
+}
+
+footer nav li {
+	float: left;
+	font: 14px SimSun;
+	margin: 8px 14px;
+}
+
+footer #link-wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+footer .link {
+	width: 180px;
+	margin: 50px 8px;
+	float: left;
+	font-size: 12px;
+}
+
+footer .link p {
+	color: #bdf;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+footer .link ul{
+	line-height: 170%;
+}
+
+footer #copyright {
+	text-align: center;
+	color: #bdf;
+	clear: both;
+	margin: 30px 0 20px;
+}
+
+footer #github {
+	width: 30px;
+	height: 34px; 
+	margin: 0 auto;
 }
