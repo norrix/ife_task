@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 11 11:21:42 2015
+
+@author: norrix
+"""
+
 class Solution(object):
     def evalRPN(self, tokens):
         """
