@@ -1,42 +1,49 @@
 #include <iostream>
+#include <cstdio>
 using namespace std;
 
 struct ListNode {
     int val;
     ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(int x): val(x), next(NULL) {}
 };
-
+/*
 class List {
     ListNode *head;
 public:
+    List(): head(NULL) {}
+
     void outputList() {
         ListNode *cur = head;
         while (cur != NULL) {
             cout<<cur->val<<"->";
             cur = cur->next;
         }
+        cout<<"end"<<endl;
     }
+
     void insertList(int x) {
-        ListNode node(x);
+        ListNode *node = new ListNode(x);
+        if (head == NULL) { head = node; return; }
         ListNode *cur = head;
-        if (cur == NULL) { head = &node; return; }
         while (cur->next != NULL) {
             cur = cur->next;
         }
-        cur-->next = &node;
+        cur->next = node;
     }
+
     ListNode *getHead() { return head; }
+
     void updateHead(ListNode *newHead) {
         head = newHead;
     }
 };
-
+*/
 class Solution {
 public:
     ListNode *swapPairs(ListNode *head) {
         if (head == NULL || head->next == NULL) { return head; }
-        ListNode* temp = head;
+        ListNode *temp = head;
         head = temp->next;
         temp->next = head->next;
         head->next = temp;
@@ -48,6 +55,7 @@ public:
     }
 };
 
+/*
 int main() {
     Solution a;
     List list;
@@ -58,6 +66,7 @@ int main() {
     list.outputList();
     list.updateHead(a.swapPairs(list.getHead()));
     list.outputList();
+    getchar();
     return 0;
 }
-
+*/
