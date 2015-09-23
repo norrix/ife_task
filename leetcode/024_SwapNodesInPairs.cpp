@@ -4,17 +4,17 @@ using namespace std;
 
 struct ListNode {
     int val;
-    ListNode *next;
+    ListNode* next;
     ListNode(int x): val(x), next(NULL) {}
 };
 /*
 class List {
-    ListNode *head;
+    ListNode* head;
 public:
     List(): head(NULL) {}
 
     void outputList() {
-        ListNode *cur = head;
+        ListNode* cur = head;
         while (cur != NULL) {
             cout<<cur->val<<"->";
             cur = cur->next;
@@ -23,16 +23,16 @@ public:
     }
 
     void insertList(int x) {
-        ListNode *node = new ListNode(x);
+        ListNode* node = new ListNode(x);
         if (head == NULL) { head = node; return; }
-        ListNode *cur = head;
+        ListNode* cur = head;
         while (cur->next != NULL) {
             cur = cur->next;
         }
         cur->next = node;
     }
 
-    ListNode *getHead() { return head; }
+    ListNode* getHead() { return head; }
 
     void updateHead(ListNode *newHead) {
         head = newHead;
@@ -41,9 +41,9 @@ public:
 */
 class Solution {
 public:
-    ListNode *swapPairs(ListNode *head) {
+    ListNode* swapPairs(ListNode* head) {
         if (head == NULL || head->next == NULL) { return head; }
-        ListNode *temp = head;
+        ListNode* temp = head;
         head = temp->next;
         temp->next = head->next;
         head->next = temp;
