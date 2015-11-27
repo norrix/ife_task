@@ -38,6 +38,13 @@ tz_utc_5 = timezone(timedelta(hours = 5))
 dt = dt.replace(tzinfo = tz_utc_5) # add timezone info
 
 ```
+
+datetime -> timetuple -> timestamp
+```
+import datetime
+import time
+time.mktime(datetime.datetime(2015, 1, 1, 0, 0, 0).timetuple())
+```
 -----
 ## File I/O
 exception
