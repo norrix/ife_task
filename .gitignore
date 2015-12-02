@@ -3,3 +3,7 @@ __pycache__/
 
 # Java
 *.jar
+
+# ZIP/RAR
+*.zip
+*.rar
