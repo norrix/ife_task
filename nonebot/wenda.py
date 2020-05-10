@@ -39,5 +39,7 @@ def delet(msg):
         return '镜华不知道这个词哦~'
 
 def reply(msg):
-    if i in msg:
-        return a[i]
+    global a
+    for i in a:
+        if i in msg:
+            return a[i]
