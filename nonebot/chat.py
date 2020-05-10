@@ -4,7 +4,8 @@ from nonebot import on_command
 from hoshino import util
 from hoshino.res import R
 from hoshino.service import Service, Privilege as Priv
-import wenda
+from . import wenda
+first = True
 
 # basic function for debug, not included in Service('chat')
 @on_command('zai?', aliases=('在?', '在？', '在吗', '在么？', '在嘛', '在嘛？'))
