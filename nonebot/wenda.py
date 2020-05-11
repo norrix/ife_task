@@ -44,6 +44,6 @@ def reply(msg):
         if i in msg:
             return a[i]
 
-def keys(msg):
+def keys():
     global a
     return ', '.join(a.keys())
