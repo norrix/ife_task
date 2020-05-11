@@ -63,6 +63,8 @@ async def group_wenda(bot, ctx):
         first = False
     if '删除词条' in msg_ask:
         await bot.send(ctx, wenda.delet(msg_ask))
+    elif msg_ast == '打印所有词条':
+        await bot.send(ctx, wenda.keys())
     elif msg_ask == '重新读取记忆':
         await bot.send(ctx, wenda.readdir())
     elif '问' in msg_ask and '答' in msg_ask and '问答' not in msg_ask:
