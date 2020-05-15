@@ -49,13 +49,12 @@ async def nihaole(session):
     
 @sv.on_keyword(('确实', '有一说一', 'u1s1', 'yysy'))
 async def chat_queshi(bot, ctx):
-    if random.random() < 0.5:
-        await bot.send(ctx, '嗯嗯，没错')
+    await bot.send(ctx, '嗯嗯，没错')
 
 
 @sv.on_message('group')
 async def group_wenda(bot, ctx):
-    msg_ask = ctx['message'].extract_plain_text()
+    msg_ask = str(ctx['message'])
     global first
     if first:
         wenda.readdir()
