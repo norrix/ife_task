@@ -24,7 +24,8 @@ def add(msg):
     global a
     p = '问(.*?)答(.+)'
     msg = re.findall(p,msg)[0]
-    a[msg[0]] = msg[1]
+    if (msg[0].strip()):
+        a[msg[0].strip()] = msg[1].strip()
     savedir(a)
     return '好的，记住了~'
 
